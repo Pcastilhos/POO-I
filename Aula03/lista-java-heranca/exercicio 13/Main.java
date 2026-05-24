@@ -1,30 +1,30 @@
 /*
-Exercício 10 — Sistema Funcionário
+Exercício 13 — Sistema Escolar
+CASO DE USO:
+Uma escola deseja cadastrar alunos.
 Crie:
-- Funcionario
-- Gerente herdando de Funcionario
-Funcionario:
-- nome
-- salario
-Gerente:
-- setor
-- bonus
+- Pessoa
+- Aluno herdando de Pessoa
+Aluno:
+- matricula
+- nota1
+- nota2
 Métodos:
-- apresentar()
-- calcularSalarioFinal()
+- calcularMedia()
+- mostrarSituacao()
 */
 
 public class Main{
 
     public static void main(String[] args) {
-        Gerente g1= new Gerente();
+        Aluno a1= new Aluno();
 
-        g1.nome = "Pedro Castilhos";
-        g1.salario = 8000.00;
-        g1.bonus = 10;
-        g1.setor = "Fianceiro";
-        g1.apresentar();
-        g1.calcularSalarioFinal();
+        a1.nome = "Pedro Castilhos";
+        a1.matricula = 20000;
+        a1.nota1 = 7;
+        a1.nota2 = 7;
+        a1.apresentar();
+        a1.mostrarSituacao();
     }
 
 }

@@ -1,30 +1,30 @@
 /*
-Exercício 10 — Sistema Funcionário
+Exercício 14 — Sistema Hospital
+CASO DE USO:
+Um hospital deseja cadastrar médicos.
 Crie:
-- Funcionario
-- Gerente herdando de Funcionario
-Funcionario:
-- nome
+- Pessoa
+- Medico herdando de Pessoa
+Medico:
+- especialidade
 - salario
-Gerente:
-- setor
-- bonus
+- crm
 Métodos:
 - apresentar()
-- calcularSalarioFinal()
+- mostrarEspecialidade()
 */
 
 public class Main{
 
     public static void main(String[] args) {
-        Gerente g1= new Gerente();
+        Medico m1= new Medico();
 
-        g1.nome = "Pedro Castilhos";
-        g1.salario = 8000.00;
-        g1.bonus = 10;
-        g1.setor = "Fianceiro";
-        g1.apresentar();
-        g1.calcularSalarioFinal();
+        m1.nome = "Pedro Castilhos";
+        m1.salario = 8000.00;
+        m1.crm = "CRM/RS 123456";
+        m1.especialidade = "Geriatra";
+        m1.apresentar();
+        m1.mostrarEspecialidade();
     }
 
 }

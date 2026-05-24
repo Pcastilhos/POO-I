@@ -1,30 +1,30 @@
 /*
-Exercício 10 — Sistema Funcionário
+Exercício 12 — Sistema Bancário
 Crie:
-- Funcionario
-- Gerente herdando de Funcionario
-Funcionario:
-- nome
-- salario
-Gerente:
-- setor
-- bonus
+- Conta
+- ContaCorrente herdando de Conta
+Conta:
+- titular
+- saldo
+ContaCorrente:
+- limite
+- agencia
 Métodos:
 - apresentar()
-- calcularSalarioFinal()
+- mostrarLimite()
 */
 
 public class Main{
 
     public static void main(String[] args) {
-        Gerente g1= new Gerente();
-
-        g1.nome = "Pedro Castilhos";
-        g1.salario = 8000.00;
-        g1.bonus = 10;
-        g1.setor = "Fianceiro";
-        g1.apresentar();
-        g1.calcularSalarioFinal();
+        contaCorrente cc1= new contaCorrente();
+        
+        cc1.titular = "Pedro Castilhos";
+        cc1.saldo = 8000.00;
+        cc1.limite = 10000.00;
+        cc1.agencia = "0001-02";
+        cc1.apresentar();
+        cc1.mostrarLimite();
     }
 
 }

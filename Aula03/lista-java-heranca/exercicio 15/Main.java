@@ -1,30 +1,31 @@
 /*
-Exercício 10 — Sistema Funcionário
+Exercício 15 — Sistema Loja
+CASO DE USO:
+Uma loja deseja cadastrar produtos eletrônicos.
 Crie:
-- Funcionario
-- Gerente herdando de Funcionario
-Funcionario:
-- nome
-- salario
-Gerente:
-- setor
-- bonus
+- Produto
+- Computador herdando de Produto
+Computador:
+- memoriaRAM
+- processador
+- placaVideo
 Métodos:
 - apresentar()
-- calcularSalarioFinal()
+- mostrarConfiguracao()
 */
 
 public class Main{
 
     public static void main(String[] args) {
-        Gerente g1= new Gerente();
+        Computador comp1= new Computador();
 
-        g1.nome = "Pedro Castilhos";
-        g1.salario = 8000.00;
-        g1.bonus = 10;
-        g1.setor = "Fianceiro";
-        g1.apresentar();
-        g1.calcularSalarioFinal();
+        comp1.produto = "COMPUTADOR";
+        comp1.memoriaRAM = "32G";
+        comp1.processador = "i5";
+        comp1.placaVideo = "RX-550";
+        comp1.preco= 3000.00;
+        comp1.apresentar();
+        comp1.mostrarConfiguracao();
     }
 
 }
