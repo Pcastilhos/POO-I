@@ -24,6 +24,6 @@ public static void main(String[] args) {
     aluno.nota1 = 8.5;
     aluno.nota2 = 7.0;
     aluno.apresentar();
-    System.out.println("Media: " + aluno.calcularMedia()); 
+    aluno.calcularMedia(); 
    }
 }

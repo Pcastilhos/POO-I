@@ -22,7 +22,7 @@ public class Main {
         professor1.salario = 5000.0;
         professor1.cargaHoraria = 40;
         professor1.apresentar();
-        System.out.println("Salário Anual: R$ " + professor1.calcularSalarioAnual());
+        professor1.calcularSalarioAnual();
     }   
     
 }

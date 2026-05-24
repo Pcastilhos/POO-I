@@ -10,8 +10,10 @@ public void apresentar() {
     System.out.println("Nota 1: " + nota1);    
 }
 
-public double calcularMedia(){
-    return (nota1 + nota2) / 2;
-}
+public double calcularMedia() {
+    double media = (nota1 + nota2)/2;
+    System.out.println("Media: " + media);
+    return media;
+    }
     
 }
