@@ -1,31 +1,30 @@
 /*
-Exercício 15 — Sistema Loja
-CASO DE USO:
-Uma loja deseja cadastrar produtos eletrônicos.
+Exercício 12 — Sistema Bancário
 Crie:
-- Produto
-- Computador herdando de Produto
-Computador:
-- memoriaRAM
-- processador
-- placaVideo
+- Conta
+- ContaCorrente herdando de Conta
+Conta:
+- titular
+- saldo
+ContaCorrente:
+- limite
+- agencia
 Métodos:
 - apresentar()
-- mostrarConfiguracao()
+- mostrarLimite()
 */
 
 public class Main{
 
     public static void main(String[] args) {
-        Computador comp1= new Computador();
-
-        comp1.produto = "COMPUTADOR";
-        comp1.memoriaRAM = "32G";
-        comp1.processador = "i5";
-        comp1.placaVideo = "RX-550";
-        comp1.preco= 3000.00;
-        comp1.apresentar();
-        comp1.mostrarConfiguracao();
+        contaCorrente cc1= new contaCorrente();
+        
+        cc1.titular = "Pedro Castilhos";
+        cc1.saldo = 8000.00;
+        cc1.limite = 10000.00;
+        cc1.agencia = "0001-02";
+        cc1.apresentar();
+        cc1.mostrarLimite();
     }
 
 }
