@@ -1,31 +1,44 @@
-/*
-Exercício 15 — Sistema Loja
-CASO DE USO:
-Uma loja deseja cadastrar produtos eletrônicos.
+/* 
 Crie:
-- Produto
-- Computador herdando de Produto
-Computador:
-- memoriaRAM
-- processador
-- placaVideo
+- Veiculo
+- Carro herdando de Veiculo
+Veiculo:
+- marca
+- ano
+Carro:
+- modelo
+- quantidadePortas
 Métodos:
 - apresentar()
-- mostrarConfiguracao()
+- mostrarPortas()
 */
-
 public class Main{
+    public static void main(String[] args){
+        Carro car1 = new Carro();
+        car1.marca= "Volkswagen";
+        car1.modelo= "Brasilia";
+        car1.ano= 1973;
+        car1.velocidadeAtual=80;
+        car1.quantidadePortas= 4;
+        car1.cambioAutomatico=false;
+        car1.mostrarDados();
+        car1.verificarCambio();
+        car1.mostrarPortas();
+        System.out.println(); 
+        System.out.println(); 
 
-    public static void main(String[] args) {
-        Computador comp1= new Computador();
+        Moto mot1 = new Moto();
+        mot1.marca= "BMW";
+        mot1.modelo= "K 1600 GTL";
+        mot1.ano= 2025;
+        mot1.velocidadeAtual= 200;
+        mot1.partidaEletrica=true;
+        mot1.cilindradas=1600;
+        mot1.mostrarDados();
+        mot1.mostrarCilndradas();
+        mot1.verificarPartida();
+        
 
-        comp1.produto = "COMPUTADOR";
-        comp1.memoriaRAM = "32G";
-        comp1.processador = "i5";
-        comp1.placaVideo = "RX-550";
-        comp1.preco= 3000.00;
-        comp1.apresentar();
-        comp1.mostrarConfiguracao();
     }
 
 }
