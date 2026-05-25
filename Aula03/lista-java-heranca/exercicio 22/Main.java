@@ -20,7 +20,7 @@ public class Main{
 
         contaPoupanca cp1= new contaPoupanca();
         System.out.println("=== CONTA POUPANCA ===");
-        cp1.titular = "Pedro Véio";
+        cp1.titular = "Pedro Veio";
         cp1.saldo = 10000.00;
         cp1.numero=002;
         cp1.rendimento=1000;

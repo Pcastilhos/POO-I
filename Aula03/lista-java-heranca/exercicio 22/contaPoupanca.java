@@ -6,7 +6,7 @@ public void aplicarRendimento(){
     System.out.println("==== RENDIMENTO ====");
     System.out.println("Rendimento : "+rendimento+ " R$");
     saldo = saldo + rendimento;
-    System.out.println("Saldo após rendimento : "+saldo+ " R$");
+    System.out.println("Saldo apos rendimento : "+saldo+ " R$");
 ;
 
 } 

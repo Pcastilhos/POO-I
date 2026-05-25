@@ -13,7 +13,7 @@ public void usarLimite(){
     System.out.println("==== LIMITE ====");
     System.out.println("Limite : "+limite+ " R$");
     saldo = saldo + limite;
-    System.out.println("Saldo após uso do Limite : "+saldo+ " R$");
+    System.out.println("Saldo apos uso do Limite : "+saldo+ " R$");
 }
 
 }
