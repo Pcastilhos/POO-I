@@ -1,16 +1,19 @@
-public class contaCorrente extends conta{
-    public double taxaMensal;
-    public double limite;
+public class contaPoupanca extends conta{
+    public double rendimento;
+    public int aniversario;
 
-public void cobrarTaxa(){
-    System.out.println("==== CONTA CORRENTE ====");
+public void aplicarRendimento(){
+    System.out.println("==== RENDIMENTO ====");
+    System.out.println("Rendimento : "+rendimento+ " R$");
+    saldo = saldo + rendimento;
+    System.out.println("Saldo após rendimento : "+saldo+ " R$");
 ;
 
 } 
 
-public void usarLimite(){
-    System.out.println("==== LIMITE ====");
-    System.out.println("Limite : "+limite+ " R$");
-}
+public void mostrarAniversario(){
+    System.out.println("==== ANIVERSARIO ====");
+    System.out.println("Data : "+aniversario);
+    }
 
 }

@@ -5,25 +5,33 @@ public class conta{
     public int numero; 
     public Double saldo;
 
-public Double sacar(Double valor){
+public void apresentar(){
+    System.out.println("Titular : "+titular);
+    System.out.println("Numero : "+numero);
+
+}     
+
+public Double sacar(){
     System.out.println("==== SACAR ====");
     Scanner scanner = new Scanner (System.in);
     System.out.println("Informe valor do Saque : ");
-    valor = scanner.nextDouble();
-    saldo = saldo + valor;
+    Double valor = scanner.nextDouble();
+    saldo = saldo - valor;
+    System.out.println("Novo Saldo =  "+saldo+ "R$");
     return valor;
     } 
 
-public Double depositar(Double valor){
+public Double depositar(){
     System.out.println("==== DEPOSITAR ====");
     Scanner scanner = new Scanner (System.in);
     System.out.println("Informe valor do Deposito : ");
-    valor = scanner.nextDouble();
+    Double valor = scanner.nextDouble();
     saldo = saldo + valor;
+    System.out.println("Novo Saldo =  "+saldo+ "R$");
     return valor;
     }           
     
 public void mostrarSaldo(){
-    System.out.println("Saldo = "+saldo);
+    System.out.println("Saldo = "+saldo+ "R$");
     }        
 }
