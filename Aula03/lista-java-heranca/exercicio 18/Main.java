@@ -1,31 +1,40 @@
 /*
-Exercício 15 — Sistema Loja
-CASO DE USO:
-Uma loja deseja cadastrar produtos eletrônicos.
+Exercício 6 — Herança Pessoa e Aluno
 Crie:
-- Produto
-- Computador herdando de Produto
-Computador:
-- memoriaRAM
-- processador
-- placaVideo
+- classe Pessoa
+- classe Aluno herdando de Pessoa
+Aluno deve possuir:
+- matricula
+- nota1
+- nota2
 Métodos:
 - apresentar()
-- mostrarConfiguracao()
+- calcularMedia()
 */
 
-public class Main{
 
-    public static void main(String[] args) {
-        Computador comp1= new Computador();
+public class Main {
 
-        comp1.produto = "COMPUTADOR";
-        comp1.memoriaRAM = "32G";
-        comp1.processador = "i5";
-        comp1.placaVideo = "RX-550";
-        comp1.preco= 3000.00;
-        comp1.apresentar();
-        comp1.mostrarConfiguracao();
-    }
+public static void main(String[] args) {
+        
+    Aluno aluno = new Aluno();
+    aluno.nome = "João";
+    aluno.idade = 20;
+    aluno.matricula = 12345;
+    aluno.nota1 = 8.5;
+    aluno.nota2 = 7.0;
+    aluno.apresentar();
+    aluno.calcularMedia(); 
+    aluno.mostrarSituacao();
 
+    Professor prof1 = new Professor();
+    prof1.nome = "Jetson";
+    prof1.idade = 78;
+    prof1.cpf = "992457980245";
+    prof1.salario = 15000.0;
+    prof1.disciplina = "Matemática";
+    prof1.cargaHoraria = 40;
+    prof1.apresentar();
+    prof1.calcularSalarioAnual();
+   }
 }
