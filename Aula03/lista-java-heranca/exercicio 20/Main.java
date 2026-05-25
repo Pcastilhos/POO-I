@@ -1,31 +1,30 @@
-/*
-Exercício 15 — Sistema Loja
-CASO DE USO:
-Uma loja deseja cadastrar produtos eletrônicos.
-Crie:
-- Produto
-- Computador herdando de Produto
-Computador:
-- memoriaRAM
-- processador
-- placaVideo
-Métodos:
-- apresentar()
-- mostrarConfiguracao()
-*/
-
 public class Main{
 
     public static void main(String[] args) {
-        Computador comp1= new Computador();
+        Gerente g1= new Gerente();
 
-        comp1.produto = "COMPUTADOR";
-        comp1.memoriaRAM = "32G";
-        comp1.processador = "i5";
-        comp1.placaVideo = "RX-550";
-        comp1.preco= 3000.00;
-        comp1.apresentar();
-        comp1.mostrarConfiguracao();
+        g1.nome = "Pedro Castilhos";
+        g1.salarioBase = 8000.00;
+        g1.bonus = 10;
+        g1.setor = "Fianceiro";
+        g1.quantidadeFuncionarios= 20;
+        g1.apresentar();
+        g1.mostrarEquipe();
+        g1.calcularSalarioMensal();
+
+        Vendedor v1= new Vendedor();
+        v1.nome= "Paulo da Silva";
+        v1.salarioBase= 1600.0;
+        v1.setor= "Eletronicos";
+        v1.valorVendas= 30000.0;
+        v1.percentualComissao=10;
+        v1.apresentar();
+        v1.calcularComissao();
+        v1.calcularSalarioMensal();
+
+        
     }
+
+
 
 }
