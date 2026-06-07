@@ -1,5 +1,34 @@
-import java.util.ArrayList;
-import java.util.Scanner;
+/*
+Exercício 5 — ArrayList de Produtos
+Objetivo
+Criar um ArrayList para armazenar nomes de produtos.
+O sistema deve:
+ cadastrar 5 produtos
+ listar os produtos cadastrados
+*/
+
+
+public class aluno {
+    public String nome;
+    public int idade;
+    public int matricula;
+
+    public void apresentar(){
+        System.out.println("====ALUNO====");
+        System.out.println("Nome: " + nome);
+        System.out.println("Idade: " + idade);
+        System.out.println("Matriícula: " + matricula);
+    }
+
+  public static void main(String[] args) {
+        aluno a1 = new aluno();
+        a1.nome = "Maria";
+        a1.idade = 20;
+        a1.matricula = 12345;
+        a1.apresentar();
+    }
+}
+
 
 public class arrayProduto {
     public static void main(String[] args) {

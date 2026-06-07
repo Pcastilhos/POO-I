@@ -1,3 +1,14 @@
+/*
+Exercício 4 — Primeiro ArrayList
+Objetivo
+Criar um programa utilizando ArrayList para armazenar nomes de alunos.
+Requisitos
+ Utilizar ArrayList
+ Utilizar add()
+ Utilizar get()
+ Utilizar size()
+*/
+
 import java.util.ArrayList;
 import java.util.Scanner;
 

@@ -1,0 +1,10 @@
+Linha 1 - Registro de teste
+Linha 2 - Cadastro de aluno
+Linha 3 - Nota média: 8.5
+Linha 4 - Produto: Teclado
+Linha 5 - Produto: Mouse
+Linha 6 - Pedido número 123
+Linha 7 - Livro: A Lua e o Sol
+Linha 8 - Livro: A Sombra do Vento
+Linha 9 - Usuário: Pedro Castilhos
+Linha 10 - Fim dos registros
